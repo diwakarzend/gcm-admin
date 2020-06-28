@@ -26,7 +26,8 @@ public class UserUtil {
 
 	public static UserProfile setProfile(UserEntity entity) {
 		return UserProfile.builder().email(entity.getEmail()).firstName(entity.getFirstName())
-				.lastName(entity.getLastName()).mobile(entity.getMobile()).userName(entity.getUserName()).build();
+				.lastName(entity.getLastName()).mobile(entity.getMobile()).userName(entity.getUserName()).
+				userId(entity.getId()).build();
 	}
 
 }
